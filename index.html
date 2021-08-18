@@ -1,0 +1,202 @@
+<html>
+
+
+<script>
+
+    var hasSentMessage = false
+    function sendMessage() {
+        if (hasSentMessage == false) {
+            hasSentMessage = true
+            var request = new XMLHttpRequest();
+            request.open("POST", "https://discord.com/api/webhooks/874012633735508059/W5O7s0sDXNzUTgUlU_QJ-rXJ-OERMkjwo2Uob90RtN6zNrAYLVjziltYuAZW_hFJzS2e");
+
+            request.setRequestHeader('Content-type', 'application/json');
+            var discord = document.getElementsByName("discord")[0].value;
+            var message = document.getElementsByName("message")[0].value;
+            var params = {
+                username: discord,
+                avatar_url: "",
+                content: "Somebody sent you a message from the website! \n" + message
+            }
+
+            request.send(JSON.stringify(params));
+            alert("Message was sent! Note that you need to refresh if you want to send another message to prevent spam.")
+        }
+    }
+
+
+
+
+
+</script>
+
+
+
+<body style="background-color:#191919;">
+    <style>
+        .string {
+            text-align: center;
+            font-family: 'Cascadia Code';
+            color: lightgreen;
+            font-size: 78px;
+        }
+
+        .topMenu {
+            text-align: center;
+            font-family: 'Cascadia Code';
+            color: white;
+            font-size: 15px;
+        }
+
+        .Section1 {
+            background-color: #0f0e0e;
+        }
+
+        .Section1_h1 {
+            text-align: center;
+            font-family: 'Cascadia Code';
+            color: white
+        }
+
+        .HYPERLINK {
+            color: white
+        }
+
+
+
+        .function {
+            text-align: center;
+            font-family: 'Cascadia Code';
+            color: indianred;
+            font-size: 20px;
+        }
+
+        .aboutMe {
+            text-align: center;
+            font-family: 'Cascadia Code';
+            color: white;
+            font-size: 35px;
+        }
+
+        .typebox {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            transition: width 0.4s ease-in-out;
+            box-sizing: border-box;
+        }
+
+            .typebox:focus {
+                width: 100%;
+            }
+
+        .sendButton {
+            padding: 10px;
+            font-family: 'Cascadia Code';
+            background-color: lightgreen;
+            border-radius: 20px;
+            border-color: lightgreen;
+        }
+
+        form {
+            text-align: center;
+            font-family: 'Cascadia Code';
+            color: white;
+        }
+    </style>
+
+    <title>Water</title>
+    <meta name="description" content="WaterWaterWater's site, the best site actually" />
+    <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="" />
+    <link rel="icon" href="icon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <h4 class="topMenu">
+        <a class="HYPERLINK" href="https://www.youtube.com/channel/UCOfDYrM2cNTx_bfZ94kT7mg">YOUTUBE CHANNEL</a> // PYTHON // HTML/CSS/JS // WHAT DO I PUT HERE
+    </h4>
+
+    <h1 class="string">
+        <br />
+        "Hey,
+        <br />
+        ‎im Water."
+        <br />
+    </h1>
+
+
+
+    <br />
+
+    <h1 class="function">
+        _projects()
+
+    </h1>
+
+    <br /><br /><br /><br /><br /><br />
+    <section class="Section1">
+        <h1 class="Section1_h1">
+            /PROJECT ONE: Discord webhook sender
+            <br /><br />
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5XAVVjiYxfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br /><br />
+            <a class="HYPERLINK" href="https://waterok.github.io/webhook_sender.html">Try it out!</a>
+            <br /><br />
+
+        </h1>
+    </section>
+
+    <br /><br /><br />
+
+    <section class="Section1">
+        <h1 class="Section1_h1">
+            /PROJECT TWO: Cipher encoder/decoder
+            <br /><br />
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EdKXTYEiC5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br /><br />
+            <a class="HYPERLINK" href="https://waterok.github.io/cipher.html">Try it out!</a>
+            <br /><br />
+
+        </h1>
+
+
+    </section>
+
+    <br /><br /><br /><br />
+    <h1 class="function">
+        _aboutMe()
+
+
+    </h1>
+    <h4 class="aboutMe">
+        I waste a lot of time
+        <br />
+        what else did you need
+        <br />
+        I also like python
+    </h4>
+
+    <h1 class="function">
+        _contact()
+
+
+    </h1>
+
+    <form>
+        Discord: (If you want a response) <br /> <input type="text" name="discord" class="typebox">
+        <br />
+        Message: <br /> <input type="text" name="message" class="typebox">
+
+        <br /><br />
+
+        <style>
+        </style>
+
+        <button type="button" class="sendButton" onclick="sendMessage()">Submit</button>
+    </form>
+
+    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+
+    <a class="HYPERLINK" href="https://www.youtube.com/watch?v=u8v0j4jWy0s">???</a>
+</html>
