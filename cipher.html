@@ -1,0 +1,149 @@
+
+
+
+
+<html>
+<body style="background-color:#191919;">
+
+
+    <script>
+        function encode() {
+            let str = "";
+
+            str = document.getElementsByName("cipherText")[0].value;
+
+            str = str.toLowerCase()
+
+            str = str.replace(/a/g, "➦");
+            str = str.replace(/b/g, "↟");
+            str = str.replace(/c/g, "➢");
+            str = str.replace(/d/g, "➤");
+            str = str.replace(/e/g, "↹");
+            str = str.replace(/f/g, "↺");
+            str = str.replace(/g/g, "↯");
+            str = str.replace(/h/g, "↭");
+            str = str.replace(/i/g, "⇕");
+            str = str.replace(/j/g, "✰");
+            str = str.replace(/k/g, "⚑");
+            str = str.replace(/l/g, "⚐");
+            str = str.replace(/m/g, "✇");
+            str = str.replace(/n/g, "∞");
+            str = str.replace(/o/g, "⌕");
+            str = str.replace(/p/g, "☏");
+            str = str.replace(/q/g, "✎");
+            str = str.replace(/r/g, "✓");
+            str = str.replace(/s/g, "ℬ");
+            str = str.replace(/t/g, "@");
+            str = str.replace(/u/g, "ℭ");
+            str = str.replace(/v/g, "ໂ");
+            str = str.replace(/w/g, "Ꮵ");
+            str = str.replace(/x/g, "Ꮭ");
+            str = str.replace(/y/g, "⋒");
+            str = str.replace(/z/g, "ℍ");
+            str = str.replace(/ /g, "λ");
+            console.log(str)
+            document.getElementById("p1").innerHTML = str;
+            alert("message encoded!")
+        }
+
+        function decode() {
+            let str2 = "";
+
+            str2 = document.getElementsByName("EncodedCipherText")[0].value;
+
+
+            str2 = str2.replace(/➦/g, "a");
+            str2 = str2.replace(/↟/g, "b");
+            str2 = str2.replace(/➢/g, "c");
+            str2 = str2.replace(/➤/g, "d");
+            str2 = str2.replace(/↹/g, "e");
+            str2 = str2.replace(/↺/g, "f");
+            str2 = str2.replace(/↯/g, "g");
+            str2 = str2.replace(/↭/g, "h");
+            str2 = str2.replace(/⇕/g, "i");
+            str2 = str2.replace(/✰/g, "j");
+            str2 = str2.replace(/⚑/g, "k");
+            str2 = str2.replace(/⚐/g, "l");
+            str2 = str2.replace(/✇/g, "m");
+            str2 = str2.replace(/∞/g, "n");
+            str2 = str2.replace(/⌕/g, "o");
+            str2 = str2.replace(/☏/g, "p");
+            str2 = str2.replace(/✎/g, "q");
+            str2 = str2.replace(/✓/g, "r");
+            str2 = str2.replace(/ℬ/g, "s");
+            str2 = str2.replace(/@/g, "t");
+            str2 = str2.replace(/ℭ/g, "u");
+            str2 = str2.replace(/ໂ/g, "v");
+            str2 = str2.replace(/Ꮵ/g, "w");
+            str2 = str2.replace(/Ꮭ/g, "x");
+            str2 = str2.replace(/⋒/g, "y");
+            str2 = str2.replace(/ℍ/g, "z");
+            str2 = str2.replace(/λ/g, " ");
+            console.log(str2)
+            document.getElementById("p2").innerHTML = str2;
+            alert("message decoded!")
+        }
+
+    </script>
+
+
+
+
+    <h1>
+        ENCODE:
+        <br />
+        <input type="text" class="textBox" name="cipherText">
+        <br />
+        <button type="button" class="button" onclick="encode()">Submit</button>
+        <p id="p1">
+            Once submit is clicked, ciphertext will appear here...
+        </p>
+        <br /><br />
+
+        DECODE:
+        <br />
+        <input type="text" class="textBox" name="EncodedCipherText">
+        <br />
+        <button type="button" class="button" onclick="decode()">Submit</button>
+        <p id="p2">
+            Once submit is clicked, decoded ciphertext will appear here...
+        </p>
+    </h1>
+
+
+    <style>
+        p {
+            color: white;
+            text-align: center;
+            font-family: 'Cascadia Code';
+            font-size: 20px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-family: 'Cascadia Code';
+        }
+
+        .textBox {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            transition: width 0.4s ease-in-out;
+            box-sizing: border-box;
+        }
+
+            .textBox:focus {
+                width: 100%;
+            }
+
+        .button {
+            padding: 10px;
+            font-family: 'Cascadia Code';
+            background-color: lightgreen;
+            border-radius: 20px;
+            border-color: lightgreen;
+        }
+    </style>
+
+</html>
