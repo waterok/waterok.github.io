@@ -1,0 +1,91 @@
+<html>
+<body style="background-color:#191919;">
+    
+    <script>
+        function sendMessage() {
+            var request = new XMLHttpRequest();
+            var URL = document.getElementsByName("WebhookURL")[0].value;
+            request.open("POST", URL.toString() );
+
+            request.setRequestHeader('Content-type', 'application/json');
+            var name = document.getElementsByName("Name")[0].value;
+            var message = document.getElementsByName("Message")[0].value;
+            var avatar = document.getElementsByName("Avatar")[0].value;
+            var params = {
+                username: name.toString(),
+                avatar_url: avatar.toString(),
+                content: message.toString()
+            }
+
+            request.send(JSON.stringify(params));
+            alert("Message was sent!")
+        }
+    </script>
+
+
+    <style>
+        h2 {
+            color: white;
+            font-family: 'Cascadia Code';
+            text-align: center;
+            text-shadow: 5px 5px black;
+            font-size:80px;
+        }
+
+        h1{
+            color:white;
+            font-family:'Cascadia Code';
+            text-align:center
+        }
+
+        input[type=text] {
+            width: 50%;
+            padding: 12px 20px;
+            font-family: 'Cascadia Code';
+            border: none
+        }
+
+        input[type=text] {
+            transition: width 0.4s ease-in-out;
+        }
+
+        input[type=text]:focus {
+            width: 100%;
+        }
+
+        
+
+        .button {
+            background-color: white;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: wavy;
+            font-family: 'Cascadia Code';
+            font-size: 15px;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+
+    </style>
+        
+    <h2>
+        DISCORD WEBHOOK SENDER! :D<br />
+
+    </h2>
+
+    <h1>
+
+        Webhook URL: <br /> <input type="text" name="WebhookURL">
+        <br />
+        Name: <br /><input type="text" name="Name"><br />
+        Profile picture URL: <br /><input type="text" name="Avatar"><br />
+        Message: <br /><input type="text" name="Message"><br /><br />
+        <button type="button" class="button" onclick="sendMessage()">Submit</button>
+    </h1>
+        
+
+</html>
