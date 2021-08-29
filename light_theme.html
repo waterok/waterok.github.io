@@ -1,0 +1,459 @@
+﻿<html>
+
+<title>Water</title>
+<meta name="description" content="WaterWaterWater's site, the best site actually" />
+<meta charset="utf-8" />
+<meta name="robots" content="index, follow" />
+<link rel="stylesheet" href="" />
+<link rel="icon" href="icon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+    .responsive {
+        width: 50%;
+        height: auto;
+    }
+
+    .responsive2 {
+        width: 25%;
+        height: auto;
+    }
+
+    body {
+        background-color: #ffffff
+    }
+
+    .TitleHeader {
+        text-align: center;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 50px;
+    }
+
+    .TitleDesc {
+        text-align: center;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+    }
+
+    .Section1 {
+        background-color: #f5f5f5
+        
+    }
+
+    .SectionText {
+        text-align: center;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+    }
+
+    .SectionHeaderText {
+        text-align: center;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 30px;
+    }
+
+    .textBox {
+        
+        background-color:#141414;
+        width: 30%;
+        padding: 12px 5px;
+        margin: 1px 0;
+        transition: width 0.4s ease-in-out;
+        box-sizing: border-box;
+        color:white
+    }
+
+    h6 {
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        color: black;
+        font-size: 30px;
+    }
+
+
+
+    .textBox:focus {
+        width: 50%;
+    }
+
+    .button {
+        padding: 10px;
+        font-family: "Times New Roman", Times, serif;
+        background-color: lightgreen;
+        border-radius: 20px;
+        border-color: lightgreen;
+    }
+    
+</style>
+
+<!--The first <section> is for the stuff at the top-->
+<button type="button" class="button" onclick="done()">click here when done</button>
+<section>
+    <h2 id="topBarText" class="TitleDesc">COOKING / ART / LIGHT THEME IS BAD / WHY</h2>
+</section>
+<h6>
+    <input type="text" class="textBox" name="topBarValue"> <!--STUFF-->
+    
+    <button type="button" class="button" onclick="changeTopBar()">Submit</button>
+</h6>
+<section class="Title">
+
+    <h1 class="TitleHeader" id="WelcomeText">
+        <br />Welcome!<br />
+    </h1>
+    <h6>
+        <input type="text" class="textBox" name="welcomeTextValue"> <!--STUFF-->
+        
+        <button type="button" class="button" onclick="changeWelcomeText()">Submit</button>
+    </h6>
+    <h2 class="TitleDesc" id="titleDesc">
+        This is such an awesome website. <br /> Sample text haha awesome <br />
+    </h2>
+    <h6>
+        <input type="text" class="textBox" name="welcomeDescValue"> <!--STUFF-->
+        
+        <button type="button" class="button" onclick="changeWelcomeDescText()">Submit</button>
+    </h6>
+</section>
+
+<section class="Section1">
+    <br /><h1 class="SectionHeaderText">Our mission!</h1>
+
+    <h2 class="SectionText" id="section1text">Never before have I seen such a great website. Sample text haha awesome. I'm really good at making sample text, right?</h2>
+    <h6>
+        <input type="text" class="textBox" name="section1value"> <!--STUFF-->
+        
+        <button type="button" class="button" onclick="changeSection1text()">Submit</button>
+    </h6>
+    <h2 class="SectionText">
+        <br /> <br />  <img src="https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?cs=srgb&dl=pexels-pixabay-326279.jpg&fm=jpg" alt="image" class="responsive">    <br /><br />
+    </h2>
+    
+    <h6>
+        ENTER IMAGE URL <br />
+        <input type="text" class="textBox" name="section1image"> <!--STUFF-->
+        
+        <button type="button" class="button" onclick="changeSection1image()">Submit</button>
+    </h6>
+</section>
+
+<br />
+<br />
+
+<section class="Section1">
+    <br /><h1 class="SectionHeaderText">About me!</h1>
+
+    <h2 class="SectionText" id="section2text">Never before have I seen such a great website. Sample text haha awesome I'm really good at making sample text, right?</h2>
+    <h6>
+        <input type="text" class="textBox" name="section2value"> <!--STUFF-->
+        
+        <button type="button" class="button" onclick="changeSection2text()">Submit</button>
+    </h6>
+    <h2 class="SectionText">
+        <br /> <br />  <img src="https://cdn.discordapp.com/attachments/863642097104846862/881018048843251772/random_pixelated_guy_lol.png" alt="image" class="responsive2">    <br />
+    </h2>
+    <h6>
+        ENTER IMAGE URL <br />
+        <input type="text" class="textBox" name="section2image"> <!--STUFF-->
+        
+        <button type="button" class="button" onclick="changeSection2image()">Submit</button>
+    </h6>
+</section>
+<br />
+<br />
+<section class="Section1">
+    <br /><h1 class="SectionHeaderText">Contact</h1>
+    <h2 class="SectionText" id="section3text">You can contact me through some chat app example#0000, or via email example@example</h2>
+    <h6>
+        <input type="text" class="textBox" name="section3value"> <!--STUFF-->
+        
+        <button type="button" class="button" onclick="changeSection3text()">Submit</button>
+    </h6>
+    <h2 class="SectionText">
+        <br /> <br />  <img src="https://images.pexels.com/photos/3854025/pexels-photo-3854025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="image" class="responsive">    <br />
+    </h2>
+    <h6>
+        ENTER IMAGE URL <br />
+        <input type="text" class="textBox" name="section3image"> <!--STUFF-->
+        
+        <button type="button" class="button" onclick="changeSection3image()">Submit</button>
+    </h6>
+</section>
+<br />
+<br />
+<section class="Section1">
+    <br /><h1 class="SectionHeaderText">Social links</h1>
+    <h2 class="SectionText" id="section4text">
+        <br />https://twitter.com / https://www.youtube.com / https://github.com/<br /> <br />     <br />
+    </h2>
+    <h6>
+        <input type="text" class="textBox" name="section4value"> <!--STUFF-->
+        
+        <button type="button" class="button" onclick="changeSection4text()">Submit</button>
+    </h6>
+</section>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    window.topBar = "COOKING / ART / LIGHT THEME IS BAD / WHY"
+    window.welcomeText = "Welcome!"
+    window.welcomeDesc = "This is such an awesome website. <br> sample text"
+    window.section1text = "Never before have I seen such a great website. Sample text haha awesome. I'm really good at making sample text, right?"
+    window.section1imageURL = "https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?cs=srgb&dl=pexels-pixabay-326279.jpg&fm=jpg"
+    window.section2text = "Never before have I seen such a great website. Sample text haha awesome I'm really good at making sample text, right?"
+    window.section2imageURL = "https://cdn.discordapp.com/attachments/863642097104846862/881018048843251772/random_pixelated_guy_lol.png"
+    window.section3text = "You can contact me through some chat app example#0000, or via email example@example"
+    window.section3imageURL = "https://images.pexels.com/photos/3854025/pexels-photo-3854025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    window.section4text = "https://twitter.com / https://www.youtube.com / https://github.com/"
+    function changeTopBar() {
+        window.topBar = document.getElementsByName("topBarValue")[0].value;
+        console.log(topBar)
+        document.getElementById("topBarText").innerHTML = topBar;
+    }
+
+    function changeWelcomeText() {
+        window.welcomeText = document.getElementsByName("welcomeTextValue")[0].value;
+        console.log(welcomeText)
+        document.getElementById("WelcomeText").innerHTML = welcomeText;
+    }
+
+    function changeWelcomeDescText() {
+        window.welcomeDesc = document.getElementsByName("welcomeDescValue")[0].value;
+        console.log(welcomeDesc)
+        document.getElementById("titleDesc").innerHTML = welcomeDesc;
+    }
+
+    function changeSection1text() {
+        window.section1text = document.getElementsByName("section1value")[0].value;
+        console.log(section1text )
+        document.getElementById("section1text").innerHTML = section1text;
+    }
+
+    function changeSection1image() {
+        window.section1imageURL = document.getElementsByName("section1image")[0].value;
+        console.log(section1imageURL)
+        alert("note that you will not see image changes in real time, they will only be in the final result. This is because i have no idea how to make the images real time and I hate you")
+    }
+
+    function changeSection2text() {
+        window.section2text = document.getElementsByName("section2value")[0].value;
+        console.log(section2text)
+        document.getElementById("section2text").innerHTML = section2text;
+    }
+
+    function changeSection2image() {
+        window.section2imageURL = document.getElementsByName("section2image")[0].value;
+        console.log(section2imageURL)
+        alert("note that you will not see image changes in real time, they will only be in the final result. This is because i have no idea how to make the images real time and I hate you")
+    }
+
+
+    function changeSection3text() {
+        window.section3text = document.getElementsByName("section3value")[0].value;
+        console.log(section3text)
+        document.getElementById("section3text").innerHTML = section3text;
+    }
+
+    function changeSection3image() {
+        window.section3imageURL = document.getElementsByName("section3image")[0].value;
+        console.log(section3imageURL)
+        alert("note that you will not see image changes in real time, they will only be in the final result. This is because i have no idea how to make the images real time and I hate you")
+    }
+
+    function changeSection4text() {
+        window.section4text = document.getElementsByName("section4value")[0].value;
+        console.log(section4text)
+        document.getElementById("section4text").innerHTML = section4text;
+    }
+
+
+    //duck
+
+
+    function done() {
+
+
+    var finalText =  `
+        <html>
+
+<meta charset="utf-8" />
+<meta name="robots" content="index, follow" />
+<link rel="stylesheet" href="" />
+<link rel="icon" href="icon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+    .responsive {
+        width: 50%;
+        height: auto;
+    }
+
+    .responsive2 {
+        width: 25%;
+        height: auto;
+    }
+
+    body {
+        background-color: #ffffff
+    }
+
+    .TitleHeader {
+        text-align: center;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 50px;
+    }
+
+    .TitleDesc {
+        text-align: center;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+    }
+
+    .Section1 {
+        background-color: #f5f5f5
+        
+    }
+
+    .SectionText {
+        text-align: center;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+    }
+
+    .SectionHeaderText {
+        text-align: center;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 30px;
+    }
+
+    .textBox {
+        
+        background-color:#141414;
+        width: 30%;
+        padding: 12px 5px;
+        margin: 1px 0;
+        transition: width 0.4s ease-in-out;
+        box-sizing: border-box;
+        color:white
+    }
+
+    h6 {
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        color: black;
+        font-size: 30px;
+    }
+
+
+
+    .textBox:focus {
+        width: 50%;
+    }
+
+    .button {
+        padding: 10px;
+        font-family: "Times New Roman", Times, serif;
+        background-color: lightgreen;
+        border-radius: 20px;
+        border-color: lightgreen;
+    }
+    
+</style>
+
+<!--The first <section> is for the stuff at the top-->
+
+<section>
+    <h2 id="topBarText" class="TitleDesc">` + topBar +`</h2>
+</section>
+
+<section class="Title">
+
+    <h1 class="TitleHeader" id="WelcomeText">
+        <br />` + welcomeText + `<br />
+    </h1>
+    
+    <h2 class="TitleDesc" id="titleDesc">
+        `+ welcomeDesc + ` <br />
+    </h2>
+    
+</section>
+
+<section class="Section1">
+    <br /><h1 class="SectionHeaderText">Our mission</h1>
+
+    <h2 class="SectionText" id="section1text">` + section1text + `</h2>
+    
+    <h2 class="SectionText">
+        <br /> <br />  <img src="` + section1imageURL + `" alt="image" class="responsive">    <br /><br />
+    </h2>
+    
+    
+</section>
+
+<br />
+<br />
+
+<section class="Section1">
+    <br /><h1 class="SectionHeaderText">About me!</h1>
+
+    <h2 class="SectionText" id="section2text">` + section2text + `</h2>
+   
+    <h2 class="SectionText">
+        <br /> <br />  <img src="` + section2imageURL + `" alt="image" class="responsive2">    <br />
+    </h2>
+    
+</section>
+<br />
+<br />
+<section class="Section1">
+    <br /><h1 class="SectionHeaderText">Contact</h1>
+    <h2 class="SectionText" id="section3text">` + section3text + `</h2>
+    
+    <h2 class="SectionText">
+        <br /> <br />  <img src="` + section3imageURL + `" alt="image" class="responsive">    <br />
+    </h2>
+    
+</section>
+<br />
+<br />
+<section class="Section1">
+    <br /><h1 class="SectionHeaderText">Social links!</h1>
+    <h2 class="SectionText" id="section4text">
+        <br />` + section4text + `<br /> <br />     <br />
+    </h2>
+    
+</section>
+
+
+</html>
+        `
+
+        console.log(finalText)
+        alert(finalText)
+
+    }
+
+
+
+</script>
