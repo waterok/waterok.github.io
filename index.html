@@ -36,11 +36,15 @@
 <body style="background-color:#191919;">
     <style>
         
+        a:hover {
+            text-shadow:2px 2px black;
+        }
+        
         @keyframes example {
             0%   {color: lightgreen;}
             25%  {color: indianred;}
-             50%  {color: lightblue;}
-             100% {color: lightgreen;}
+            50%  {color: lightblue;}
+            100% {color: lightgreen;}
         }
         
         .string {
@@ -67,7 +71,10 @@
         .Section1_h1 {
             text-align: center;
             font-family: "Lucida Console", "Courier New", monospace;
-            color: white
+            color: white;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
         }
 
         .HYPERLINK {
