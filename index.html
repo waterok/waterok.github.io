@@ -35,11 +35,22 @@
 
 <body style="background-color:#191919;">
     <style>
+        
+        @keyframes example {
+            0%   {color: lightgreen;}
+            25%  {color: indianred;}
+             50%  {color: lightblue;}
+             100% {color: lightgreen;}
+        }
+        
         .string {
             text-align: center;
             font-family: "Lucida Console", "Courier New", monospace;
             color: lightgreen;
             font-size: 78px;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
         }
 
         .topMenu {
