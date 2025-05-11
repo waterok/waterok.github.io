@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flashing Background with Image</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      animation: flashBackground 5s infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: white;
+
+    }
+
+    @keyframes flashBackground {
+      0%   { background-color: #38d584; }
+      50%  { background-color: #28ab67; }
+      100% { background-color: #38d584; }
+    }
+
+    
+
+    img {
+      width: 200px; /* Adjust size here */
+      height: auto;
+      
+    }
+
+    p {
+        font-size:32px;
+        text-shadow: 2px 2px 4px #000000;
+        
+    }
+
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+         border-radius: 25px;
+         
+    }
+
+    input[type=button], input[type=submit], input[type=reset] {
+         background-color: #04AA6D;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+         border-radius: 25px;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Robux_2019_Logo_gold.svg/1200px-Robux_2019_Logo_gold.svg.png" alt="Centered Image">
+  <p>CONGRATS! would you like some ROBUX?</p>
+  <p>Enter info here:</p>
+  <form>
+  
+  <input type="text" id="fname" name="fname">
+  
+  <input type="text" id="lname" name="lname">
+
+<input type="button" onclick="location.href='skid.html';" value="Go to Google" />
+
+</form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flashing Background with Image</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      animation: flashBackground 1s infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: black;
+
+    }
+
+    @keyframes flashBackground {
+      0%   { background-color: red; }
+      50%  { background-color: darkred; }
+      100% { background-color: red; }
+    }
+
+    @keyframes shake {
+      0% { transform: translate(0px, 0px) rotate(0deg); }
+      10% { transform: translate(-10px, 5px) rotate(-5deg); }
+      20% { transform: translate(10px, -5px) rotate(5deg); }
+      30% { transform: translate(-7px, -7px) rotate(-3deg); }
+      40% { transform: translate(7px, 7px) rotate(3deg); }
+      50% { transform: translate(-5px, 10px) rotate(-2deg); }
+      60% { transform: translate(5px, -10px) rotate(2deg); }
+      70% { transform: translate(-10px, -5px) rotate(-4deg); }
+      80% { transform: translate(10px, 5px) rotate(4deg); }
+      90% { transform: translate(-5px, -5px) rotate(-2deg); }
+      100% { transform: translate(0px, 0px) rotate(0deg); }
+    }
+
+    img {
+      width: 200px; /* Adjust size here */
+      height: auto;
+      animation: shake 0.5s infinite;
+    }
+
+    p {
+        font-size:32px;
+        animation: shake 1s infinite;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://www.freeiconspng.com/uploads/wide-head-skull-photo-symbol-15.png" alt="Centered Image">
+  <p>YOU HAVE BEEN HACKED! STUPID IDIOT</p>
+</body>
+</html>
